@@ -1,0 +1,90 @@
+<HTML>
+
+<HEAD>
+  <META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <TITLE>StyleHumanCLIP: Text-guided Garment Manipulation for StyleGAN-Human</TITLE>
+  <style type="text/css">
+    #wrap {
+      width: 900px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    #wrap2 {
+      width: 1440px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+  <div id="wrap">
+    <H2 align="center">StyleHumanCLIP: Text-guided Garment Manipulation for StyleGAN-Human</H2>
+  </div>
+  <CENTER>
+    <P><a href="http://www.cgg.cs.tsukuba.ac.jp/~yoshikawa/index.html">Takato Yoshikawa</a>, <a
+        href="https://endo-yuki-t.github.io">Yuki Endo</a>, <a
+        href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a></P>
+    <P>University of Tsukuba</P>
+    <P>VISAPP 2024</P>
+    <P><font color="red">Best Student Paper Award</font></P>
+    <BR>
+    <div id="wrap"><img src="./teaser.png" width="100%" border="0"></div>
+  </CENTER>
+
+  <div id="wrap">
+    <HR boader="1">
+    <h3>Abstract:</h3>
+    <p align="justify">
+      This paper tackles text-guided control of StyleGAN for editing garments in full-body human images. Existing
+    StyleGAN-based methods suffer from handling the rich diversity of garments and body shapes and poses. We
+    propose a framework for text-guided full-body human image synthesis via an attention-based latent code map-
+    per, which enables more disentangled control of StyleGAN than existing mappers. Our latent code mapper
+    adopts an attention mechanism that adaptively manipulates individual latent codes on different StyleGAN lay-
+    ers under text guidance. In addition, we introduce feature-space masking at inference time to avoid unwanted
+    changes caused by text inputs. Our quantitative and qualitative evaluations reveal that our method can control
+    generated images more faithfully to given texts than existing methods.
+    </p>
+
+    <p><b>Keywords</b>: StyleGAN; Text-guided Garment Manipulationl; Full-body Human Image;</p>
+
+    <HR boader="1">
+    <h3>Video:</h3>
+    <CENTER>
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/_McZROb__yE?si=tzV0lYDmgFNTx2H7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </CENTER>
+    <HR boader="1">
+
+    <h3>Publication:</h3>
+    <ol>
+      <li>Takato Yoshikawa, Yuki Endo, Yoshihiro Kanamori: "StyleHumanCLIP: Text-guided Garment Manipulation for StyleGAN-Human"
+        International Conference on Computer Vision Theory and Applications (VISAPP 2024), 2024. [<a
+          href="pdf/Yoshikawa_VISIGRAPP_2024.pdf">PDF</a>(5MB)]
+        <!-- todo:後日正式版が公開されたら、出版社URLを貼る -->
+    </ol>
+
+    <hr boader="1">
+
+    <h3>BibTeX Citation</h3>
+    <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+      <pre>@article{YoshikawaVISIGRAPP24,
+      author    = {Takato Yoshikawa and Yuki Endo and Yoshihiro Kanamori},
+      title     = {StyleHumanCLIP: Text-guided Garment Manipulation for StyleGAN-Human},
+      booktitle = {International Conference on Computer Vision Theory and Applications (VISAPP 2024)},
+      year = {2024}
+    }</pre>
+    </div>
+    <hr boader="1">
+
+    <!-- <h3>Acknowledgments</h3>
+    The authors would like to thank ZOZO, Inc. for providing a real photograph dataset, without which this work was not possible. The authors would also like to thank the anonymous referees for their constructive comments.
+    For our accompanying video, input images courtesy of Z, A, B, and C.
+    <hr boader="1"> -->
+
+    <p>Last modified: Feb 2024</p>
+    [<a href="javascript:history.back()">back</a>]
+  </div>
+</BODY>
+
+</HTML>
