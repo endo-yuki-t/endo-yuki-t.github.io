@@ -1,0 +1,84 @@
+<HTML>
+    <HEAD>
+    <META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <TITLE>Relighting Humans in the Wild: Monocular Full-Body Human Relighting with Domain Adaptation</TITLE>
+    <style type="text/css">
+    #wrap{
+      width:900px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    #wrap2{
+      width:1440px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    </style>
+    </HEAD>
+    <BODY bgcolor="#FFFFFF">
+    <div id="wrap"><H2 align="center">Relighting Humans in the Wild:<br>Monocular Full-Body Human Relighting with Domain Adaptation</H2>
+    </div>
+    <CENTER>
+    <P><a href="http://www.cgg.cs.tsukuba.ac.jp/~tajima/index.html">Daichi Tajima</a>, <a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a>, <a href="https://endo-yuki-t.github.io">Yuki Endo</a></P>
+    <P>University of Tsukuba</P>
+    <P>Pacific Graphics 2021</P>
+    <BR>
+    <div id="wrap"><img src="./teaser_pg.jpg" width="100%" border="0"></div>
+    </CENTER>
+    
+    <div id="wrap">
+    <HR boader="1">
+    <h3>Abstract:</h3>
+    <p align="justify">The modern supervised approaches for human image relighting rely on training data generated from 3D human models. However, such datasets are often small (e.g., Light Stage data with a small number of individuals) or limited to diffuse materials (e.g., commercial 3D scanned human models). Thus, the human relighting techniques suffer from the poor generalization capability and synthetic-to-real domain gap. In this paper, we propose a two-stage method for single-image human relighting with domain adaptation. In the first stage, we train a neural network for diffuse-only relighting. In the second stage, we train another network for enhancing non-diffuse reflection by learning residuals between real photos and images reconstructed by the diffuse-only network. Thanks to the second stage, we can achieve higher generalization capability against various cloth textures, while reducing the domain gap. Furthermore, to handle input videos, we integrate illumination-aware deep video prior to greatly reduce flickering artifacts even with challenging settings under dynamic illuminations.</p>
+    
+    <p><b>Keywords</b>: Image manipulation; Neural networks</p>
+    
+    <HR boader="1">
+    <h3>Video:</h3>
+    <CENTER>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/EZa9SjcTF14" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </CENTER>
+    <HR boader="1">
+    
+    <h3>Code: (published on Oct. 18, 2021)</h3>
+    <ul>
+      <li><a href="https://github.com/majita06/Relighting_in_the_Wild">PyTorch Code<a></li>
+      <li><a href="https://drive.google.com/drive/folders/1ezvJJy9DcsgCn7XGfHNqVlmWQe7fhGab?usp=sharing">Pre-trained Models<a> (430 MB)</li>
+    </ul>
+    
+    <HR boader="1">
+    <h3>Real Photo Dataset:</h3>
+    <ul>
+      <li>Dataset will be published soon. 
+    </ul>
+    
+    <HR boader="1">
+    <h3>Publication:</h3>
+    <ol>
+      <li>Daichi Tajima, Yoshihiro Kanamori, Yuki Endo: "Relighting Humans in the Wild: Monocular Full-Body Human Relighting with Domain Adaptation," Computer Graphics Forum (Proc. of Pacific Graphics 2021), 2021. [<a href="https://arxiv.org/abs/2110.07272">arXiv</a>][<a href="pdf/tajima_PG21.pdf">PDF</a> (14 MB)]
+    </ol>
+    
+    <hr boader="1">
+    <h3>BibTeX Citation</h3>
+    <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+    <pre>@article{tajimaPG21,
+      author    = {Daichi Tajima and Yoshihiro Kanamori and Yuki Endo},
+      title     = {Relighting Humans in the Wild: Monocular Full-Body Human Relighting with Domain Adaptation},
+      journal   = {Computer Graphics Forum (Proc. of Pacific Graphics 2021)},
+      volume    = {40},
+      number    = {7},
+      pages     = {205--216},
+      year      = {2021}
+    }</pre></div>
+    <hr boader="1">
+
+    <h3>Acknowledgments</h3>
+    The authors would like to thank ZOZO, Inc. for providing a real photograph dataset, without which this work was not possible. The authors would also like to thank the anonymous referees for their constructive comments.
+    <!---For our accompanying video, input images courtesy of Z, A, B, and C.-->
+    <hr boader="1">
+    
+    <p>Last modified: Oct. 2021</p>
+    [<a href="javascript:history.back()">back</a>]
+    </div>
+    </BODY>
+    </HTML>
