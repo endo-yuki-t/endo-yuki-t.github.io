@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<TITLE>Masked-Attention Diffusion Guidance for Spatially Controlling Text-to-Image Generation</TITLE>
+<style type="text/css">
+#wrap{
+  width:900px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#wrap2{
+  width:1440px;
+  margin-right:auto;
+  margin-left:auto;
+}
+</style>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<div id="wrap"><H2 align="center">Masked-Attention Diffusion Guidance for Spatially Controlling Text-to-Image Generation</H2>
+</div>
+<CENTER>
+
+<P><a href="https://endo-yuki-t.github.io/index_en.html">Yuki Endo</a></P>
+<P>University of Tsukuba</P>
+<P>The Visual Computer</P>
+<BR>
+<div id="wrap"><img src="teaser.jpg" width="100%" border="0"></div>
+</CENTER>
+
+<div id="wrap">
+<HR boader="1">
+<h3>Abstract:</h3>
+<p align="justify">
+Text-to-image synthesis has achieved high-quality results with recent advances in diffusion models. However, text input alone has high spatial ambiguity and limited user controllability. Most existing methods allow spatial control through additional visual guidance (e.g., sketches and semantic masks) but require additional training with annotated images. In this paper, we propose a method for spatially controlling text-to-image generation without further training of diffusion models. Our method is based on the insight that the cross-attention maps reflect the positional relationship between words and pixels. Our aim is to control the attention maps according to given semantic masks and text prompts. To this end, we first explore a simple approach of directly swapping the cross-attention maps with constant maps computed from the semantic regions. Some prior works also allow training-free spatial control of text-to-image diffusion models by directly manipulating cross-attention maps. However, these approaches still suffer from misalignment to given masks because manipulated attention maps are far from actual ones learned by diffusion models. To address this issue, we propose masked-attention guidance, which can generate images more faithful to semantic masks via indirect control of attention to each word and pixel by manipulating noise images fed to diffusion models. Masked-attention guidance can be easily integrated into pre-trained off-the-shelf diffusion models (e.g., Stable Diffusion) and applied to the tasks of text-guided image editing. Experiments show that our method enables more accurate spatial control than baselines qualitatively and quantitatively.
+</p>
+
+<h3>Publication:</h3>
+<ol>
+  <li>Yuki Endo: "Masked-Attention Diffusion Guidance for Spatially Controlling Text-to-Image Generation," The Visual Computer, 2023. [<a href="https://arxiv.org/abs/2308.06027">PDF(preprint)</a>][<a href="https://github.com/endo-yuki-t/MAG">Code</a>]
+</ol>
+
+<hr boader="1">
+<h3>BibTeX Citation</h3>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+@Article{endoTVC2023,<br>
+Title = {Masked-Attention Diffusion Guidance for Spatially Controlling Text-to-Image Generation},<br>
+Author = {Yuki Endo},<br>
+Journal = {The Visual Computer},<br>
+volume = {},<br>
+number = {},<br>
+pages = {},<br>
+doi = {},<br>
+Year = {2023}<br>
+}</div>
+
+<hr boader="1">
+
+<p>Last modified: October 2023</p>
+[<a href="javascript:history.back()">back</a>]
+</div>
+</BODY>
+</HTML>
