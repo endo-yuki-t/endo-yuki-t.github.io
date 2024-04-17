@@ -1,0 +1,201 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Deep Reverse Tone Mapping (DrTMO)</title>
+<style type="text/css">
+#wrap{
+  width:800px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#wrap2{
+  width:1440px;
+  margin-right:auto;
+  margin-left:auto;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<div id="wrap">
+<!--[<b>English</b> | <a href="popup_jp.html">Japanese</a>] -->
+<h2 align="center">Deep Reverse Tone Mapping</h2>
+<center>
+<p><a href="https://endo-yuki-t.github.io/index_en.html">Yuki Endo</a>,
+<a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a>,
+and <a href="http://mitani.cs.tsukuba.ac.jp/en/">Jun Mitani</a></p>
+<p>University of Tsukuba<br>
+<br>
+<img src="img(2400x1800).jpg" width="600" border="0">
+<br>
+</center>
+<hr boader="1">
+<h3>Abstract:</h3>
+<p align="justify">Inferring a high dynamic range (HDR) image from a single low dynamic range (LDR) input is an ill-posed problem where we must compensate lost data caused by under-/over-exposure and color quantization. To tackle this, we propose the first deep-learning-based approach for fully automatic inference using convolutional neural networks. Because a naive way of directly inferring a 32-bit HDR image from an 8-bit LDR image is intractable due to the difficulty of training, we take an indirect approach; the key idea of our method is to synthesize LDR images taken with different exposures (i.e., bracketed images) based on supervised learning, and then reconstruct an HDR image by merging them. By learning the relative changes of pixel values due to increased/decreased exposures using 3D deconvolutional networks, our method can reproduce not only natural tones without introducing visible noise but also the colors of saturated pixels. We demonstrate the effectiveness of our method by comparing our results not only with those of conventional methods but also with ground-truth HDR images.</p>
+<hr boader="1">
+<h3>Overview</h3>
+<p>We train 3D convolutional neural networks in order to infer bracketed LDR images from a single LDR image. The inferred LDR images are then merged to generate an HDR image.</p>
+
+<center>
+<img src="overview.jpg" width="800" border="0"><br>
+<img src="network.jpg" width="800" border="0">
+</center>
+</div>
+<div id="wrap2">
+<hr boader="1">
+<h3>Comparisons with Existing Methods</h3>
+The left-most LDR images are expanded to HDR images using each rTMO and visualized using the consistent tone mapping operator [Kim and Kautz 2008].
+To visualize the clipped (i.e., under/overexposed) pixels in the input LDR images, pixels of the images in the second column are painted in red/green if they are completely under/overexposed (i.e., black/white) or in magenta/cyan if one or two channels are under/overexposed, respectively.<br>
+<font color="red">[Nov. 8 2017] Note: We used the OpenCV implementations of HDR merging methods (i.e.,
+[Mertens et al. 2007] and [Debevec and Malik 1997]) to generate the results in our paper, but we found that they sometimes yield low-quality HDR images. Using more sophisticated implementation (e.g., Photoshop) is recommended. <s>We will update the results soon.</s><br>
+[Nov. 22 2017] Note: We have updated the results below.</font>
+
+<center>
+<table border="0">
+<tr align="center">
+  <td>Input images</td>
+  <td>Clipped pixels</td>
+  <td>[Aky&#252;z et al. 2007]</td>
+  <td>[Huo et al. 2014]</td>
+  <td>[Kovaleski and Oliveira 2014]</td>
+  <td>[Masia et al. 2015]</td>
+  <td>Ours (MergeMertens)</td>
+  <td>Ours (MergePhothoshop)</td>
+</tr><tr>
+  <td><img src="Results1/teaser/Input.png" width="180" border="0"></td>
+  <td><img src="Results1/teaser/over_under_exposured_areas.png" width="180" border="0"></td>
+  <td><img src="Results1/teaser/tm/AkyuzEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/teaser/tm/HuoPhysEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/teaser/tm/KovaleskiOliveiraEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/teaser/tm/MasiaEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/teaser/tm/Ours_MergeMertens_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/teaser/tm/Untitled_HDR2_KimKautzConsistentTMO.png" width="180" border="0"></td>
+</tr><tr>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/Input.png" width="180" border="0"></td>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/over_under_exposured_areas.png" width="180" border="0"></td>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/tm/AkyuzEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/tm/HuoPhysEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/tm/KovaleskiOliveiraEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/tm/MasiaEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/tm/Ours_MergeMertens_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/gsun_46571260e16fe906ed069e70df754fba.jpg/tm/Untitled_HDR2_KimKautzConsistentTMO.png" width="180" border="0"></td>
+</tr><tr>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/Input.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/over_under_exposured_areas.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/tm/AkyuzEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/tm/HuoPhysEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/tm/KovaleskiOliveiraEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/tm/MasiaEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/tm/Ours_MergeMertens_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aloginpwqytyrb_80_10_120.jpg/tm/Untitled_HDR2_KimKautzConsistentTMO.png" width="180" border="0"></td>
+</tr><tr>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/Input.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/over_under_exposured_areas.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/tm/AkyuzEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/tm/HuoPhysEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/tm/KovaleskiOliveiraEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/tm/MasiaEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/tm/Ours_MergeMertens_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aotallxbnaandt_80_10_0.jpg/tm/Untitled_HDR2_KimKautzConsistentTMO.png" width="180" border="0"></td>
+</tr><tr>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/Input.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/over_under_exposured_areas.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/tm/AkyuzEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/tm/HuoPhysEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/tm/KovaleskiOliveiraEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/tm/MasiaEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/tm/Ours_MergeMertens_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_apwjxarfhsdlhy_80_10_60.jpg/tm/Untitled_HDR2_KimKautzConsistentTMO.png" width="180" border="0"></td>
+</tr><tr>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/Input.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/over_under_exposured_areas.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/tm/AkyuzEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/tm/HuoPhysEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/tm/KovaleskiOliveiraEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/tm/MasiaEO_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/tm/Ours_MergeMertens_KimKautzConsistentTMO.png" width="180" border="0"></td>
+  <td><img src="Results1/pano_aqzmgohsmexpua_80_10_180.jpg/tm/Untitled_HDR2_KimKautzConsistentTMO.png" width="180" border="0"></td>
+ </tr><tr align="center">
+  <td>Input images</td>
+  <td>Clipped pixels</td>
+  <td>[Aky&#252;z et al. 2007]</td>
+  <td>[Huo et al. 2014]</td>
+  <td>[Kovaleski and Oliveira 2014]</td>
+  <td>[Masia et al. 2015]</td>
+  <td>Ours (MergeMertens)</td>
+  <td>Ours (MergePhothoshop)</td>
+</tr>
+</table>
+</center>
+<br>
+<!-- *The raw data can be downloaded from [here].--> <br>
+<h3>Comparisons with Concurrent Work</h3>
+The exposures of the input LDR images are reduced or increased, revealing loss of information in clipped image regions.
+<center>
+<table border="0">
+<tr align="center">
+  <td>Input images</td>
+  <td>[Eilertsen et al. 2017]</td>
+  <td>Ours (MergePhotoshop)</td>
+</tr><tr>
+  <td><img src="Results1/img_001/in.png" width="480" border="0"></td>
+  <td><img src="Results1/img_001/out.png" width="480" border="0"></td>
+  <td><img src="Results1/img_001/Untitled_HDR2.png" width="480" border="0"></td>
+</tr><tr>
+  <td><img src="Results1/img_002/in.png" width="480" border="0"></td>
+  <td><img src="Results1/img_002/out.png" width="480" border="0"></td>
+  <td><img src="Results1/img_002/Untitled_HDR2.png" width="480" border="0"></td>
+</tr><tr>
+  <td><img src="Results1/img_003/in.png" width="480" border="0"></td>
+  <td><img src="Results1/img_003/out.png" width="480" border="0"></td>
+  <td><img src="Results1/img_003/Untitled_HDR2.png" width="480" border="0"></td>
+</tr><tr>
+</tr><tr>
+  <td><img src="Results1/img_004/in.png" width="480" border="0"></td>
+  <td><img src="Results1/img_004/out.png" width="480" border="0"></td>
+  <td><img src="Results1/img_004/Untitled_HDR2.png" width="480" border="0"></td>
+</tr><tr>
+</tr><tr>
+  <td><img src="Results1/img_005/in.png" width="480" border="0"></td>
+  <td><img src="Results1/img_005/out.png" width="480" border="0"></td>
+  <td><img src="Results1/img_005/Untitled_HDR2.png" width="480" border="0"></td>
+</tr><tr>
+</tr><tr>
+  <td><img src="Results1/img_006/in.png" width="480" border="0"></td>
+  <td><img src="Results1/img_006/out.png" width="480" border="0"></td>
+  <td><img src="Results1/img_006/Untitled_HDR2.png" width="480" border="0"></td>
+</tr><tr>
+ </tr><tr align="center">
+  <td>Input images</td>
+  <td>[Eilertsen et al. 2017]</td>
+  <td>Ours (MergePhotoshop)</td>
+</tr>
+</table>
+</center>
+
+More results (coming soon)
+<hr boader="1">
+</div>
+<div id="wrap">
+<h3>Publications:</h3>
+<ol>
+  <li>Yuki Endo,Yoshihiro Kanamori, and Jun Mitani,
+"Deep Reverse Tone Mapping," ACM Transactions on Graphics (Proc. of SIGGRAPH ASIA 2017), 36, 6, Article 177 (November 2017), 10 pages.
+[<a href="./paper/DrTMO_SIGGRAPHAsia.pdf">Paper (90MB)</a>]
+[<a href="./paper/DrTMO_SIGGRAPHAsia_light.pdf">Paper (low resolution, 1MB)</a>] [<a href="./Codes/DrTMO.zip">Code (20MB)</a>] [<a href="./Codes/models.zip">Trained models (1.2GB)</a>]
+</li>
+</ol>
+<hr boader="1">
+<h3>BibTeX Citation</h3>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+@Article{endoSA2017,<br>
+  Title                    = {Deep Reverse Tone Mapping},<br>
+  Author                   = {Yuki Endo and Yoshihiro Kanamori and Jun Mitani},<br>
+  Journal                  = {ACM Transactions on Graphics (Proc. of SIGGRAPH ASIA 2017)},<br>
+  volume = {36},<br>
+  number = {6},<br>
+  month = nov,<br>
+  Year                     = {2017}<br>
+}</div>
+<hr boader="1">
+<h3>&nbsp;</h3>
+</div>
+</body></html>
