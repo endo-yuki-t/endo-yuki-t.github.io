@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<TITLE>Matting and Compositing for Fresnel Reflection on Wavy Surfaces</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<H2 align="center">Matting and Compositing for Fresnel Reflection on Wavy Surfaces</H2>
+<CENTER>
+<P>Yuki Endo<sup>1</sup>, Yoshihiro Kanamori<sup>1</sup>, Yukio Fukui<sup>1</sup> and Jun Mitani<sup>1, 2</sup></P>
+<P><sup>1</sup>University of Tsukuba, <sup>2</sup>JST/ERATO</P>
+<BR>
+<table border="0">
+<tr>
+  <td><a href="water_surfaces.jpg"><img src="water_surfaces.jpg" height="200" border="0"></a></td>
+  <td><a href="other_results.jpg"><img src="other_results.jpg" height="200" border="0"></a></td>
+</tr>
+</table>
+</CENTER>
+<HR boader="1">
+<h3>Abstract:</h3>
+This paper introduces a framework that can extract an alpha matte from a single image with Fresnel reflection,
+and that can composite other objects with the image such that plausible reflections are included. Our method
+handles reflections in a plane with small undulations, for example, a water surface with waves or a glossy tabletop.
+During the matting stage, our method first estimates the transmission color, which is assumed to be uniform, and
+then calculates a reflection image and alpha matte based on user markups. However, accurate extraction of the
+matte becomes challenging when a plane has small undulations because these create perturbations in the matte.
+We therefore propose a filter that can refine the matte effectively. In the compositing stage, the reflection of a
+composited object is synthesized by ray tracing in real time. We demonstrate the effectiveness of our method
+through comparisons with ground-truth data and results using natural images as inputs.
+
+<HR boader="1">
+<h3>Publications:</h3>
+<ol>
+  <li>Yuki Endo, Yoshihiro Kanamori, Yukio Fukui and Jun Mitani: "Matting and Compositing for Fresnel Reflection on Wavy Surfaces," Computer Graphics Forum (Proc. of Eurographics Symposium on Rendering 2012), Vol. 31, No. 4, pp. 1435-1443, 2012.
+  [<a href="egsr12_endo_reflection.pdf">PDF</a> (2.1MB)] [<a href="egsr12_endo_reflection.pptx">PPTX</a> (18.6MB, without movies)] [<a href="egsr12_endo_reflection.mp4">Movie</a> (24.4MB)] [<a href="BibTex.txt">BibTex</a>]
+</ol>
+
+<p>Last modified: 28 June, 2012</p>
+[<a href="/index.html">back</a>]
+</BODY>
+</HTML>

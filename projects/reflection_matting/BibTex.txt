@@ -1,0 +1,9 @@
+@article{Endo:2012,
+ author = {Yuki Endo and Yoshihiro Kanamori and Yukio Fukui and Jun Mitani},
+ title = {Matting and Compositing for Fresnel Reflection on Wavy Surfaces},
+ journal = {Computer Graphics Forum (Proc. of Eurographics Symposium on Rendering 2012)},
+ pages = {1435--1443},
+ volume = {31},
+ number = {4},
+ year = {2012}
+}
