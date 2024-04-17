@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<TITLE>Efficient Depth Propagation for Constructing a Layered Depth Image from a Single Image</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<!--[<b>English</b> | <a href="popup_jp.html">Japanese</a>] -->
+<H2 align="center">Efficient Depth Propagation for Constructing a Layered Depth Image from a Single Image</H2>
+<CENTER>
+<P><a href="http://iizuka.cs.tsukuba.ac.jp/">Satoshi Iizuka</a>, <a href="https://endo-yuki-t.github.io">Yuki Endo</a>, <a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a>, <a href="https://mitani.cs.tsukuba.ac.jp/ja/">Jun Mitani</a>, <a href="https://www.npal.cs.tsukuba.ac.jp/~fukui/">Yukio Fukui</a></P>
+<P>University of Tsukuba</P>
+<BR>
+<table border="0">
+<tr>
+  <td>
+  <a><img src="images/top.jpg" height="150" border="0"></a>
+  </td>
+</tr>
+</table>
+</CENTER>
+<HR boader="1">
+<h3>Abstract:</h3>
+<p align="justify">In this paper, we propose an interactive technique for constructing a 3D scene via sparse user inputs. We represent a 3D scene in the form of a Layered Depth Image (LDI) which is composed of a foreground layer and a background layer, and each layer has a corresponding texture and depth map. Given user-specified sparse depth inputs, depth maps are computed based on superpixels using interpolation with geodesic-distance weighting and an optimization framework. This computation is done immediately, which allows the user to edit the LDI interactively. Additionally, our technique automatically estimates depth and texture in occluded regions using the depth discontinuity. In our interface, the user paints strokes on the 3D model directly. The drawn strokes serve as 3D handles with which the user can pull out or push the 3D surface easily and intuitively with real-time feedback. We show our technique enables efficient modeling of LDI that produce sufficient 3D effects.</p>
+<br>
+
+<h3>Video</h3>
+<p class="image" align="center">
+  <video controls width="600" height="600" src="data/demo_1224.mp4"></video>
+</p>
+
+<HR boader="1">
+<h3>Publications:</h3>
+<ol>
+  <li>Satoshi Iizuka, Yuki Endo, Yoshihiro Kanamori, Jun Mitani, and Yukio Fukui, "Efficient Depth Propagation for Constructing a Layered Depth Image from a Single Image", Computer Graphics Forum (Proc. of Pacific Graphics 2014), 33, 7, 279-288, 2014. [<a href="data/main_1224.pdf">Pdf</a> (6MB)][<a href="bib/make3D_pg.bib">BibTex</a>]
+
+<!--  [<a href="eg08_metaballs.pdf">PDF</a> (2.8MB)] [<a href="kanamori_eg08.ppt">PPT</a> (9.4MB, without movies)] [<a href="eg08_metaballs.wmv">Movie</a> (17.8MB)] [<a href="BibTex.txt">BibTex</a>]
+-->
+  
+  <!--<li>Satoshi Iizuka, Yuki Endo, Jun Mitani, Yoshihiro Kanamori, Yukio Fukui: "A Design System for Pop-Up Cards using a Physical Simulation" (in Japanese) Visual Computing 2011, June, 2011 (to appear).
+  <li>Satoshi Iizuka and Yuki Endo, "A Interactive Design System for Pop-Up Cards using a Mass-Spring model", (in Japanese) CS Technical Reports Special Issue on "Program for Develpment of ICT Solution Architects", pp. 61-68, 2011. 
+  -->  
+</ol>
+<h3>&nbsp;</h3>
+
+<!--
+<p>Last modified: 14 July, 2008</p>
+[<a href="/index.html">back</a>]
+-->
+
+</BODY>
+</HTML>
+
