@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<TITLE>Controlling StyleGANs Using Rough Scribbles via One-shot Learning</TITLE>
+<style type="text/css">
+#wrap{
+  width:900px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#wrap2{
+  width:1440px;
+  margin-right:auto;
+  margin-left:auto;
+}
+</style>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<div id="wrap"><H2 align="center">Controlling StyleGANs Using Rough Scribbles via One-shot Learning</H2>
+</div>
+<CENTER>
+
+<P><a href="http://www.cgg.cs.tsukuba.ac.jp/~endo/index_en.html">Yuki Endo</a> and <a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a></P>
+<P>University of Tsukuba</P>
+<P>Computer Animation and Virtual Worlds (Computer Graphics International 2022)</P>
+<BR>
+<div id="wrap"><img src="teaser.jpg" width="100%" border="0"></div>
+</CENTER>
+
+<div id="wrap">
+<HR boader="1">
+<h3>Abstract:</h3>
+<p align="justify">
+This paper tackles the challenging problem of one-shot semantic image synthesis from rough sparse annotations, which we call "semantic scribbles." Namely, from only a single training pair annotated with semantic scribbles, we generate realistic and diverse images with layout control over, e.g., facial part layouts and body poses. We present a training strategy that performs pseudo labeling for semantic scribbles using the StyleGAN prior. Our key idea is to construct a simple mapping between StyleGAN features and each semantic class from a single example of semantic scribbles. With such mappings, we can generate an unlimited number of pseudo semantic scribbles from random noise to train an encoder for controlling a pre-trained StyleGAN generator. Even with our rough pseudo semantic scribbles obtained via one-shot supervision, our method can synthesize high-quality images thanks to our GAN inversion framework. We further offer optimization-based post-processing to refine the pixel alignment of synthesized images. Qualitative and quantitative results on various datasets demonstrate improvement over previous approaches in one-shot settings. 
+</p>
+
+<HR boader="1">
+<h3>Video:</h3>
+<CENTER>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Q6fVI8SXQWQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</CENTER>
+<HR boader="1">
+
+<h3>Publication:</h3>
+<ol>
+  <li>Yuki Endo, Yoshihiro Kanamori: "Controlling StyleGANs Using Rough Scribbles via One-shot Learning," Computer Animation and Virtual Worlds (Computer Graphics International 2022), 2022. [<a href="CAVW_endo22_preprint.pdf">PDF(preprint)</a> (22MB)][<a href="https://github.com/endo-yuki-t/StyleGANSparseControl">Code</a>]
+</ol>
+<h3>Related Publication:</h3>
+<ol>
+  <li>Yuki Endo, Yoshihiro Kanamori: "Few-shot Semantic Image Synthesis Using StyleGAN Prior," arXiv, 2021. [<a href="https://arxiv.org/abs/2103.14877">PDF<a>][<a href="https://github.com/endo-yuki-t/Fewshot-SMIS">Code</a>]
+</ol>
+
+<hr boader="1">
+<h3>BibTeX Citation</h3>
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+@Article{endoCAVW2022,<br>
+  Title                    = {Controlling StyleGANs Using Rough Scribbles via One-shot Learning},<br>
+  Author                   = {Yuki Endo and Yoshihiro Kanamori},<br>
+  Journal                  = {Computer Animation and Virtual Worlds},<br>
+  volume                   = {33},<br>
+  number                   = {5},<br>
+  doi                      = {10.1002/CAV.2102},<br>
+  Year                     = {2022}<br>
+}</div>
+
+<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+@Article{endoArXiv2021,<br>
+  Title                    = {Few-shot Semantic Image Synthesis Using StyleGAN Prior},<br>
+  Author                   = {Yuki Endo and Yoshihiro Kanamori},<br>
+  journal   = {CoRR},<br>
+  volume    = {abs/2103.14877},<br>
+  year      = {2021},<br>
+  url       = {https://arxiv.org/abs/2103.14877},<br>
+  eprinttype = {arXiv},<br>
+  eprint    = {2103.14877}<br>
+}</div>
+
+<hr boader="1">
+
+<p>Last modified: June 2022</p>
+[<a href="javascript:history.back()">back</a>]
+</div>
+</BODY>
+</HTML>
