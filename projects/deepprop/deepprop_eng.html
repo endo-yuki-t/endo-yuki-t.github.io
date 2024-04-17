@@ -1,0 +1,68 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>DeepProp: Extracting Deep Features from a Single Image for Edit Propagation</title>
+</head>
+<body bgcolor="#FFFFFF">
+<!--[<b>English</b> | <a href="popup_jp.html">Japanese</a>] -->
+<h2 align="center">DeepProp: Extracting Deep Features from a Single Image for Edit Propagation</h2>
+<center>
+<p>Yuki Endo<sup>1</sup>, Satoshi Iizuka<sup>2</sup>, Yoshihiro Kanamori<sup>1</sup>, and Jun Mitani<sup>1</sup></p>
+<p><sup>1</sup>University of Tsukuba<br>
+ <sup>2</sup>Waseda University</p>
+<br>
+<img src="representative.png" height="180" border="0">
+<br>
+</center>
+<hr boader="1">
+<h3>Abstract:</h3>
+<p align="justify">Edit propagation is a technique that can propagate 
+various image edits (e.g., colorization and recoloring) performed via 
+user strokes to the entire image based on similarity of image features. 
+In most previous work, users must manually determine the importance of 
+each image feature (e.g., color, coordinates, and textures) in 
+accordance with their needs and target images. We focus on 
+representation learning that automatically learns feature 
+representations only from user strokes in a single image instead of 
+tuning existing features manually. To this end, this paper proposes an 
+edit propagation method using a deep neural network (DNN). Our DNN, 
+which consists of several layers such as convolutional layers and a 
+feature combiner, extracts stroke-adapted visual features and spatial 
+features, and then adjusts the importance of them. We also develop a 
+learning algorithm for our DNN that does not suffer from the vanishing 
+gradient problem, and hence avoids falling into undesirable locally 
+optimal solutions. We demonstrate that edit propagation with deep 
+features, without manual feature tuning, can achieve better results than
+ previous work.</p>
+<br>
+<hr boader="1">
+<h3>Our DNN Architecture:</h3>
+<p>
+Our model is a feedforward neural network that has four structures: 
+visual feature extractor (VFE), spatial feature extractor (SFE), feature
+ combiner (FC), and label estimator (LE). Unlike most previous methods 
+of edit propagation, determining importance of each image feature is not
+ required.
+<br>
+<br>
+</p><center>
+<img src="dnn.svg" height="300" border="0">
+</center>
+<p></p>
+<br>
+<hr boader="1">
+<h3>Publications:</h3>
+<ol>
+  <li>Yuki Endo, Satoshi Iizuka, Yoshihiro Kanamori, and Jun Mitani, 
+"DeepProp: Extracting Deep Features from a Single Image for Edit 
+Propagation", Computer Graphics Forum (Proc. of Eurographics 2016), 35, 
+2, 189-201, 2016. [<a href="deepprop.pdf">Pdf</a> (64.7MB)]&nbsp; [<a href="deepprop.bib">BibTex</a>] [<a href="DeepProp.zip">Code</a>]
+</li>
+</ol>
+<hr boader="1">
+This work was supported in part by JST CREST. Yoshihiro Kanamori is funded by JSPS Postdoctoral Fellowships for Research Abroad.
+<h3>&nbsp;</h3>
+
+
+
+
+</body></html>
