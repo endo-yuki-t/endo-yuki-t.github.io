@@ -1,0 +1,50 @@
+=================================================================================
+Human models freely-downloaded or purchased for the paper
+"Relighting Humans: Occlusion-Aware Inverse Rendering for Full-Body Human Images"
+=================================================================================
+
+Note that we manually omitted models in sitting poses and with more than one figures
+from our dataset.
+
+[Artec3D]
+
+Full body scan
+https://www.artec3d.com/3d-models/full-body-scan
+
+[TurboSquid]
+
+40X MAXPACK #1
+https://www.turbosquid.com/3d-models/3d-model-human-people-1-40x/891410
+
+40X MAXPACK #2
+https://www.turbosquid.com/3d-models/human-people-40x-2-max/953095
+
+42X MAXPACK #3
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/1075303#3
+
+3DTree_llc citypeople collection x15 Pack
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/873430
+
+Winter People Collection x13
+https://www.turbosquid.com/FullPreview/Index.cfm/ID/962490
+
+[Renderpeople]
+
+Free Download - 3D Posed People
+https://renderpeople.com/free-3d-people/
+
+[TEN24]
+
+Female Visualisation Characters
+https://www.3dscanstore.com/3d-model-bundle/female-visualisation-characters
+
+Male Clothing Bundle
+https://www.3dscanstore.com/clothing-3d-models/male-clothing-3d-model-bundle
+
+[CGTrader]
+
+Interior People Collection x20 Low-poly 3D model
+https://www.cgtrader.com/3d-models/character/woman/interior-people-collection-x20
+
+98 Realistic human models Low-poly 3D model
+https://www.cgtrader.com/3d-models/scanned/various/98-realistic-human-models

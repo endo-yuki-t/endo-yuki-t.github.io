@@ -1,0 +1,129 @@
+=================================================================================
+Human models selected from BUFF dataset http://buff.is.tue.mpg.de/ for the paper
+"Relighting Humans: Occlusion-Aware Inverse Rendering for Full-Body Human Images"
+=================================================================================
+
+Note that we manually selected poses that are as disimilar as possible to each other 
+for individuals with different costumes.
+
+[00005]
+
+shortlong_hips/
+  - shortlong_hips.000001.ply
+  - shortlong_hips.000058.ply
+  - shortlong_hips.000090.ply
+  - shortlong_hips.000110.ply
+  - shortlong_hips.000127.ply
+  - shortlong_hips.000160.ply
+  - shortlong_hips.000230.ply
+  - shortlong_hips.000242.ply
+  - shortlong_hips.000281.ply
+  - shortlong_hips.000310.ply
+  - shortlong_shoulders_mill.000060.ply
+  - shortlong_shoulders_mill.000095.ply
+  - shortlong_shoulders_mill.000330.ply
+
+soccerc_hips/
+  - soccerc_hips.000001.ply
+  - soccerc_hips.000217.ply
+  - soccerc_hips.000280.ply
+  - soccerc_hips.000308.ply
+  - soccerc_hips.000340.ply
+
+[00032]
+
+shortlong_hips/
+  - shortlong_hips.000001.ply
+
+shortlong_tilt_twist_left/
+  - soccerc_tilt_twist_left.000164.ply
+  - soccerc_tilt_twist_left.000195.ply
+  - soccerc_tilt_twist_left.000214.ply
+
+soccerc_hips/
+  - soccerc_hips.000001.ply
+  - soccerc_hips.000090.ply
+  - soccerc_hips.000176.ply
+  - soccerc_hips.000196.ply
+  - soccerc_hips.000210.ply
+
+soccerc_tilt_twist_left/
+  - soccerc_tilt_twist_left.000149.ply
+  - soccerc_tilt_twist_left.000221.ply
+  - soccerc_tilt_twist_left.000258.ply
+
+[00096]
+
+shortlong_hips/
+  - shortlong_hips.000001.ply
+  - shortlong_hips.000046.ply
+  - shortlong_hips.000170.ply
+
+shortlong_tilt_twist_left/
+  - shortlong_tilt_twist_left.000040.ply
+  - shortlong_tilt_twist_left.000320.ply
+
+[00114]
+
+shortlong_hips/
+  - shortlong_hips.000001.ply
+  - shortlong_hips.000110.ply
+  - shortlong_hips.000156.ply
+
+shortlong_shoulders_mill/
+  - shortlong_shoulders_mill.000060.ply
+  - shortlong_shoulders_mill.000169.ply
+
+shortlong_tilt_twist_left/
+  - shortlong_tilt_twist_left.000045.ply
+  - shortlong_tilt_twist_left.000058.ply
+  - shortlong_tilt_twist_left.000205.ply
+  - shortlong_tilt_twist_left.000262.ply
+
+soccerc_hips/
+  - soccerc_hips.000001.ply
+  - soccerc_hips.000105.ply
+  - soccerc_hips.000124.ply
+  - soccerc_hips.000150.ply
+  - soccerc_hips.000268.ply
+
+soccerc_shoulders_mill/
+  - soccerc_shoulders_mill.000055.ply
+  - soccerc_shoulders_mill.000073.ply
+  - soccerc_shoulders_mill.000100.ply
+
+[03223]
+
+shortlong_hips/
+  - shortlong_hips.000001.ply
+  - shortlong_hips.000098.ply
+  - shortlong_hips.000170.ply
+  - shortlong_hips.000206.ply
+  - shortlong_hips.000260.ply
+  - shortlong_hips.000332.ply
+
+shortlong_shoulders_mill/
+  - shortlong_shoulders_mill.000070.ply
+  - shortlong_shoulders_mill.000140.ply
+
+shortlong_tilt_twist_left/
+  - shortlong_tilt_twist_left.000052.ply
+  - shortlong_tilt_twist_left.000110.ply
+  - shortlong_tilt_twist_left.000359.ply
+
+soccerc_hips/
+  - soccerc_hips.000001.ply
+  - soccerc_hips.000095.ply
+  - soccerc_hips.000185.ply
+  - soccerc_hips.000384.ply
+
+soccerc_shoulders_mill/
+  - soccerc_shoulders_mill.000097.ply
+  - soccerc_shoulders_mill.000113.ply
+  - soccerc_shoulders_mill.000314.ply
+
+soccerc_tilt_twist_left/
+  - soccerc_tilt_twist_left.000076.ply
+  - soccerc_tilt_twist_left.000131.ply
+  - soccerc_tilt_twist_left.000366.ply
+  - soccerc_tilt_twist_left.000470.ply

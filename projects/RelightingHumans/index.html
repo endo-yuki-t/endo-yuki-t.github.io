@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<TITLE>Relighting Humans: Occlusion-Aware Inverse Rendering for Full-Body Human Images</TITLE>
+<style type="text/css">
+#wrap{
+  width:800px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#wrap2{
+  width:1440px;
+  margin-right:auto;
+  margin-left:auto;
+}
+</style>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<p id="wrap" align="right">[<a href="index-ja.html">Japanese</a>]</p>
+<H2 align="center">Relighting Humans: Occlusion-Aware Inverse Rendering for Full-Body Human Images</H2>
+<CENTER>
+<P><a href="https://kanamori.cs.tsukuba.ac.jp">Yoshihiro Kanamori</a><sup>&dagger;</sup>, <a href="https://endo-yuki-t.github.io">Yuki Endo</a><sup>&dagger;&Dagger;</sup></P>
+<P><sup>&dagger;</sup>University of Tsukuba, <sup>&Dagger;</sup>Toyohashi University of Technology</P>
+<P>SIGGRAPH Asia 2018</P>
+<p><font color="red">Patent Pending</font></p>
+<BR>
+<img src="teaser.jpg" width="800" border="0">
+</CENTER>
+<div id="wrap">
+<HR boader="1">
+<h3>YouTube:</h3>
+<CENTER>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/5wy0yxuX01A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</CENTER>
+
+<HR boader="1">
+<h3>Abstract:</h3>
+<p align="justify">Relighting of human images has various applications in image synthesis. For relighting, we must infer albedo, shape, and illumination from a human portrait. Previous techniques rely on human faces for this inference, based on spherical harmonics (SH) lighting. However, because they often ignore light occlusion, inferred shapes are biased and relit images are unnaturally bright particularly at hollowed regions such as armpits, crotches, or garment wrinkles. This paper introduces the first attempt to infer light occlusion in the SH formulation directly. Based on supervised learning using convolutional neural networks (CNNs), we infer not only an albedo map, illumination but also a light transport map that encodes occlusion as nine SH coefficients per pixel. The main difficulty in this inference is the lack of training datasets compared to unlimited variations of human portraits. Surprisingly, geometric information including occlusion can be inferred plausibly even with a small dataset of synthesized human figures, by carefully preparing the dataset so that the CNNs can exploit the data coherency. Our method accomplishes more realistic relighting than the occlusion-ignored formulation.</p>
+<p><b>Keywords</b>: inverse rendering, light transport, convolutional neural network</p>
+
+<HR boader="1">
+<h3>Supplemental material:</h3>
+<p>(Coming soon)</p>
+
+<HR boader="1">
+<a name="data"></a>
+<h3>Data:</h3>
+<ul>
+  <li><a href="light_data.zip">Light data</a> (40 lights for training and 10 lights for test, used in the paper)</li>
+  <li><a href="https://drive.google.com/file/d/1pIstovTT-gxGLSvmjtHQCGJt3q5l1AI9/view?usp=sharing">Trained model for chainer</a> (261MB, trained up to 60 epochs and used in the paper)</li>
+  <li><a href="https://drive.google.com/file/d/1tRPOZ5axNUdChkF_5gOEOeBlWUOZUT9_/view?usp=sharing">Trained model for PyTorch</a> (282MB, trained up to 59 epochs)</li>
+  <li>Human 3D model lists: [<a href="buff_model_list.txt">BUFF dataset</a>] [<a href="purchased_model_list.txt">Commercial websites</a>]</li>
+</ul>
+
+<HR boader="1">
+<h3>Code:</h3>
+<ul>
+  <li><a href="relighting_humans_codes.zip">Codes (chainer)</a> (Note: the data above are also required)</li>
+  <li><a href="relighting_humans_pytorch.zip">Codes (PyTorch)</a> (Ported by Daichi Tajima, thanks! Note: the data above are also required)</li>
+</ul>
+
+<HR boader="1">
+<h3>Press:</h3>
+<ul>
+  <li>(21st Nov. 2018) <a href="https://www.fxguide.com/quicktakes/siggraph-asia-preview/">Interview by Mr. Mike Seymour at fxguide</a></li>
+  <li>(18th Oct. 2018) <a href="https://techcorp.zozo.com/entry/20181018_zozotech">Blog article of ZOZO Technologies, Inc.</a> (in Japanese)</li>
+</ul>
+
+<HR boader="1">
+<h3>Acknowledgments:</h3>
+<p>The authors would like to thank ZOZO Technologies, Inc. for generous financial support throughout this project, without which this work was not possible. The authors would also like to thank the anonymous referees for their constructive comments, and Ms. Sina Kitz for proof-reading the final version of this paper. For our accompanying video, input images courtesy of Kat Garcia, Kinga Cichewicz, George Gvasalia, and Jacob Postuma.</p>
+
+<HR boader="1">
+<h3>Publication:</h3>
+<ol>
+  <li>Yoshihiro Kanamori, Yuki Endo: "Relighting Humans: Occlusion-Aware Inverse Rendering for Full-Body Human Images," ACM Transactions on Graphics (Proc. of SIGGRAPH Asia 2018), 37, 6, Article No. 270, November 2018. [<a href="https://arxiv.org/abs/1908.02714">PDF</a>]
+</ol>
+<p>Last modified: 30 June 2021</p>
+[<a href="/index.html">back</a>]
+</div>
+</BODY>
+</HTML>
