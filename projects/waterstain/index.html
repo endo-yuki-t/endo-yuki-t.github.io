@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<title>粒子シミュレーションによる水汚れ画像生成システム</title>
-<link rel="stylesheet" href="../../../style.css" type="text/css" />
-<!link rel="stylesheet" href="../../style_project.css" type="text/css" />
+<title>An Interactive Design System for Water Flow Stains on Outdoor Images</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<!link rel="stylesheet" href="style_project.css" type="text/css" />
 </head>
 
 <body>
@@ -13,51 +13,31 @@
 
 <div id="main">
 
-
-<!-- ヘッダー -->
-
-<div id="header">
-
-<h1> &nbsp; </h1>
-
-<table border="0" cellpadding="0" cellspacing="0" width="900">
-  <tr>
-    <td><div id="table-left"><h2><a href="../../../index.html"><img src="../../../img/npal_title.png" alt="" border="0" /></a></h2></div></td>
-    <td><div id="table-right"><br /><br /><img src="../../../img/icon.gif" alt="icon" border="0" /> <a href="/private/">内部ページ</a></div></td>
-  </tr>
-</table>
-
-
-</div>
-
-<div id="header-menu">
-   <ul>
-    <li><a href="../../../projects.html">プロジェクト一覧</a></li>
-   </ul>
-</div>
-
-
-<!-- ヘッダー終わり -->
-
-
 <!-- コンテンツ -->
 <div id="container">
 
 <!-- メインコンテンツ -->
 <div id="contents" style="padding-left:130px">
 
-<h3 style="font-size:150%">粒子シミュレーションによる水汚れ画像生成システム</h3>
+<h3 style="font-size:150%">An Interactive Design System for Water Flow Stains on Outdoor Images<br>粒子シミュレーションによる水汚れ画像生成システム</h3>
 
 <div align="center">
+<p>Smart Graphics 2010</p>
+<P><a href="https://endo-yuki-t.github.io">Yuki Endo</a>, <a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a>, <a href="https://mitani.cs.tsukuba.ac.jp/ja/">Jun Mitani</a>, <a href="https://www.npal.cs.tsukuba.ac.jp/~fukui/">Yukio Fukui</a></P>
+    <P>University of Tsukuba</P>
 <img src="images/water.jpg" height="250" />
 </div>
 
 <h3>Video</h3>
 <p class="image" align="center">
-<iframe width="480" height="360" src="http://www.youtube.com/embed/v2M84PwzGbY?rel=0" frameborder="0" allowfullscreen></iframe>
+<video controls width="600" height="600" src="images/endo_sg.mov"></video>
 </p>
 
 <h3>Abstract</h3>
+<p>
+Weathering and aging effects are essential for synthesizing
+realistic outdoor images in the field of film production and scene production. The problem here is that photographed materials do not yield desired images without editing, and manual painting requires laborintensive work as well as professional skills. In this paper, we focus on a salient aging effect, stains by water flows, and present a system that allows the user to add such stains directly and easily onto outdoor images. Our system represents a water droplet with a particle and simulates the dissolution, transport and sedimentation of deposits using particles in the regions specified by the user. In the simulation, realistic and complex stains can be obtained by accounting for the roughness of the surface where water flows. Furthermore, the user can adjust the amount of deposits according to the perspective in the image. The quick feedback of the simulation enables interactive manipulation. We demonstrate the effectiveness of our system through various results and user evaluations.
+</p>
 <p>
 映像制作や景観予測のために, コンピュータグラフィックス(CG) によって景観の経年変化を写実的に再現することが求められている. しかし, 実写素材を用いても意図した画像を得るのは難しく, ペイントツールなどで編集するには専門的技術が必要な上, 非常に時間がかかる. 本研究では, 2 次元画像における建物の指定した領域に, 経年変化の中でも特に顕著な水汚れを簡易的に施すことができるシステムを提案する. 提案システムでは, 水を粒子の集合で表現し, ユーザが指定した領域において, 水による汚れの溶解, 運搬および沈着をシミュレーションする. 本システムは入力画像の輝度値の変化を物体表面の凹凸とみなし, 輝度値の変化量に基づきその凹凸に合わせた水汚れを生成する. それに加え, ユーザが入力画像のパースを簡単に指定することにより, 透視投影の効果を考慮したシミュレーションを行い, より自然な水汚れを生成することが可能である. シミュレーションは短時間で完了するため, ユーザは結果を見ながら対話的に操作できる.
 </p>
@@ -89,7 +69,7 @@
 
 <div id="footer">
 <br />
-Copyright (C) NPAL All Rights Reserved.　design by <a href="http://tempnate.com/">tempnate</a>
+Copyright (C) CGG All Rights Reserved.　design by <a href="http://tempnate.com/">tempnate</a>
 </div>
 
 <!-- フッター終わり -->
