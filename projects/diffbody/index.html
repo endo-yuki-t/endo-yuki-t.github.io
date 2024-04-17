@@ -1,0 +1,106 @@
+<HTML>
+
+<HEAD>
+  <META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <title>DiffBody: Diffusion-based Pose and Shape Editing of Human Images</title>
+  <meta property="og:title" content="DiffBody: Diffusion-based Pose and Shape Editing of Human Images">
+<meta property="og:description" content="The first attempt to simultaneously edit both the pose and shape of a single human image">
+<meta property="og:type" content="article" />
+<meta property="og:image" content="DiffBody_OGP.png">
+<meta property="og:image:secure_url" content=DiffBody_OGP.png">
+<meta property="og:url" content="https://endo-yuki-t.github.io/projects/diffbody/index.html">
+<meta property="og:site_name" content="DiffBody: Diffusion-based Pose and Shape Editing of Human Images">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:title" content="DiffBody: Diffusion-based Pose and Shape Editing of Human Images">
+<meta name="twitter:description" content="The first attempt to simultaneously edit both the pose and shape of a single human image">
+<meta name="twitter:image" content="DiffBody_OGP.png">
+<meta name="twitter:card" content="summary_large_image">
+  <style type="text/css">
+    #wrap {
+      width: 900px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    #wrap2 {
+      width: 1440px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  </style>
+</HEAD>
+
+<body bgcolor="#FFFFFF">
+  <div id="wrap">
+    <h2 align="center">DiffBody: Diffusion-based Pose and Shape Editing of Human Images</h2>
+  </div>
+  <center>
+    <p><a href="http://www.cgg.cs.tsukuba.ac.jp/~okuyama/index.html">Yuta Okuyama</a>,
+      <a href="https://endo-yuki-t.github.io">Yuki Endo</a>,
+      <a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a>
+    </p>
+    <p>University of Tsukuba</p>
+    <p><b>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024</b></p>
+    <BR>
+    <div id="wrap"><img src="./teaser_wacv.png" width="100%" border="0"></div>
+  </center>
+
+  <div id="wrap">
+    <hr boader="1">
+    <h3>Abstract:</h3>
+    <p align="justify">Pose and body shape editing in a human image has received increasing attention. However, current
+      methods often struggle with dataset biases and deteriorate realism and the person's identity when users make large
+      edits. We propose a one-shot approach that enables large edits with identity preservation. To enable large edits,
+      we fit a 3D body model, project the input image onto the 3D model, and change the body's pose and shape. Because
+      this initial textured body model has artifacts due to occlusion and the inaccurate body shape, the rendered image
+      undergoes a diffusion-based refinement, in which strong noise destroys body structure and identity whereas
+      insufficient noise does not help. We thus propose an iterative refinement with weak noise, applied first for the
+      whole body and then for the face. We further enhance the realism by fine-tuning text embeddings via
+      self-supervised learning. Our quantitative and qualitative evaluations demonstrate that our method outperforms
+      other existing methods across various datasets.</p>
+
+    <p><b>Keywords</b>: Image manipulation; Neural networks</p>
+    <hr boader="1">
+    <center>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IhFUiEc2ygE?si=L-tyk47LGnEwPgSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </center>
+
+    <hr boader="1">
+
+    <h3>Publication:</h3>
+    <ol>
+      <li>
+        Yuta Okuyama, Yuki Endo, Yoshihiro Kanamori: "DiffBody: Diffusion-based Pose and Shape Editing of Human Images,"
+        IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2024. (to appear)[<a
+          href="https://arxiv.org/abs/2401.02804">pdf</a>][<a
+          href="https://github.com/yutaokuyama/DiffBody">code</a>]
+
+      </li>
+    </ol>
+
+
+
+    <hr boader="1">
+    <h3>BibTeX Citation</h3>
+    <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;">
+      <pre>
+        @InProceedings{Okuyama_2024_WACV,
+          author    = {Okuyama, Yuta and Endo, Yuki and Kanamori, Yoshihiro},
+          title     = {{DiffBody}: {D}iffusion-{B}ased {P}ose and {S}hape {E}diting of {H}uman {I}mages},
+          booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+          month     = {January},
+          year      = {2024},
+          pages     = {6333-6342}
+      }
+  </pre>
+    </div>
+    <hr boader="1">
+
+    <p>Last modified: Nov. 2023</p>
+    [<a href="javascript:history.back()">back</a>]
+  </div>
+</body>
+
+</HTML>
