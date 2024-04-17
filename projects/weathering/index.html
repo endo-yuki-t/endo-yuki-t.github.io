@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<title>Weathering effects with geometric details for images</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<!link rel="stylesheet" href="style_project.css" type="text/css" />
+</head>
+
+<body>
+
+<!-- メイン -->
+
+<div id="main">
+
+<!-- コンテンツ -->
+<div id="container">
+
+<!-- メインコンテンツ -->
+<div id="contents" style="padding-left:130px">
+
+<h3 style="font-size:150%">Weathering effects with geometric details for images<br>アピアランスマップを用いた景観画像のための対話的な経年変化編集システム</h3>
+
+<div align="center">
+<p>Computer Graphics International 2011</p>
+<P><a href="https://endo-yuki-t.github.io">Yuki Endo</a>, <a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a>, <a href="https://mitani.cs.tsukuba.ac.jp/ja/">Jun Mitani</a>, <a href="https://www.npal.cs.tsukuba.ac.jp/~fukui/">Yukio Fukui</a></P>
+    <P>University of Tsukuba</P>
+<img src="images/peeling.jpg" height="250" />
+</div>
+
+<h3>Abstract</h3>
+<p>
+We present an image-editing technique that can synthesize weathering effects with fine-scale geometric variations that occur together with weathering phenomena. We extract such fine-scale geometries as high-frequency components of the image semi-automatically according to the estimated weathering distribution in the image. The geometric details are modified when (de)-weathering is applied, yielding much morerealistic appearance than previous methods without adding excessive user inputs. We demonstrate the effectiveness of the present technique through comparisons with previous methods.
+</p>
+<p>
+画像における物体の経年変化を再現する手法を提案する．従来の手法では画像中の物体の色分布から構築される時系列モデルを用いて，物体の表面色を変化させることで写実的な経年変化を再現していた．しかしながら，錆や苔，塗料のはげ落ちなどの経年変化によって生じる，物体表面の凹凸の変化を再現することは難しかった．そこで本研究では，その経年変化によって生じる凹凸を再現するために，画像の高周波成分を用いるアプローチをとる．入力画像から高周波・低周波分離手法を用いて高周波成分を抽出してから，その高周波成分をテクスチャ合成手法を用いて合成し，経年変化の進行度合いに合わせてマッピングすることで，最終的な結果画像を得る．既存手法との結果の比較により，物体表面の凹凸を伴う写実的な経年変化を再現できることを確認した．
+</p>
+
+<h3>Video</h3>
+<p class="image" align="center">
+<video controls width="600" height="600" src="images/endo_shorpaper.mov"></video>
+</p>
+
+
+<h3>Publication</h3>
+<ul>
+	<li>Yuki Endo, Yoshihiro Kanamori, Jun Mitani, Yukio Fukui: "Weathering effects with geometric details for images", In Proc. of Computer Graphics International 2011, 2011-6 (short paper)
+	<li>遠藤 結城，金森 由博，三谷 純，福井 幸男: "アピアランスマップを用いた景観画像のための対話的な経年変化編集システム", 第139回グラフィクスとCAD研究会, 2010-7 (<font color=red>優秀研究発表賞受賞</font>). 
+</ul>
+
+<h3>Supplemental material:</h3>
+<ul>
+	 <li>Windows demo [<a href="demo/WeatheringBrush.zip">zip</a>]
+</ul>
+</div>
+
+<!-- メインコンテンツ終わり -->
+
+
+</div>
+
+<!-- コンテンツ終わり -->
+
+<!-- フッター -->
+
+<div id="footer">
+<br />
+Copyright (C) NPAL All Rights Reserved.　design by <a href="http://tempnate.com/">tempnate</a>
+</div>
+
+<!-- フッター終わり -->
+
+</div>
+
+<!-- メイン終わり -->
+
+</body>
+</html>

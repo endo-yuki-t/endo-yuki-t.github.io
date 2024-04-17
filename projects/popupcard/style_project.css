@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+
+/*---------- ページ全体の指定 ----------*/
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino KaKu Gothic Pro", "ＭＳ Ｐゴシック", "MS P Gothic", Osaka, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #333;
+  background-color: #ffffff;
+}
+
+a:link {
+  color: #004080;
+  font-size: 12px;
+}
+
+a:hover {
+  color: #005ebb;
+  font-size: 12px;
+}
+
+a:visited {
+  color: #004080;
+  font-size: 12px;
+}
+
+p {
+  margin: 18px 0 18px 0;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+
+
+/*---------- メイン ----------*/
+
+#main {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 900px;
+  background-color: #ffffff;
+}
+
+
+#main img.head_photo {
+  margin: 6px 0 0 0;
+}
+
+
+/*---------- ヘッダー ----------*/
+
+#header {
+  margin: 0;
+  width: 900px	;
+  height: 110px;
+  border-bottom: solid 3px #333333;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+#header h1 {
+  margin: 0;
+  padding: 3px 0 4px 8px;
+  border-bottom: solid 1px #cccccc;
+  text-align: left;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #000000
+}
+
+#header h2 {
+  margin: 0;
+  padding: 5px 5px 5px 5px;
+  width: 400px;
+  text-align: left;
+  font-size: 14px;
+  color: #666666;
+}
+
+
+#table-left{
+  text-align: left;
+  font-size: 16px;
+  color: #333333;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+#table-left a{
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+}
+
+#table-left a:hover{
+  font-size: 16px;
+  color: #666666;
+  text-decoration: none;
+}
+
+
+#table-right{
+  text-align: right;
+  margin: 0;
+  padding: 2px 14px 2px 0;
+  font-size: 16px;
+  color: #c9171e;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+#table-right a{
+  font-size: 12px;
+  color: #333333;
+  text-decoration: none;
+}
+
+#table-right a:hover{
+  font-size: 12px;
+  color: #666666;
+  text-decoration: none;
+}
+
+
+#header-menu {
+  width: 885px;
+  height: 20px;
+  background-color: #333333;
+  margin: 0px;
+  padding: 11px 0 5px 15px;
+  background: url(img/head_menu_back.gif);
+  background-repeat: repeat-x;
+  text-align: left;
+  width: auto;
+}
+
+#header-menu ul {
+  text-align: left;
+  padding-bottom: 1px;
+  margin: 0px;
+  padding: 0px
+}
+
+#header-menu li {
+  color: #ffffff;
+  display: inline;
+  padding-left: 16px;
+  padding-right: 10px;
+  background: url(img/l_icon.gif) no-repeat;
+  background-position: left center;
+}
+
+#header-menu a {
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#header-menu a:hover {
+  font-size: 13px;
+  color: #cccccc;
+}
+
+
+/*---------- コンテンツ ----------*/
+
+#container {
+  width: 900px;
+  margin: 0px;
+  padding: 6px 0 6px 0;
+  background-color: #ffffff;
+}
+
+
+/*---------- メインコンテンツ ----------*/
+
+#contents {
+  margin: 0;
+  padding: 5px 4px 0 10px;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 1px;
+  width: 640px;
+}
+
+#contents h2 {
+  margin: 0 0 7px 0;
+  padding: 12px 0 12px 20px;
+  line-height: 110%;
+  font-size: 12px;
+  color: #333333;
+  background-image: url(img/titlebar.gif);
+  background-repeat: no-repeat;
+}
+
+#contents p {
+  margin: 18px 0 18px 0;
+  padding: 0 5px 0 0;
+  line-height: 190%;
+  letter-spacing: 1px;
+}
+
+#contents a {
+  color: #004080;
+  font-size: 12px;
+}
+
+#contents a:hover {
+  color: #005ebb;
+  font-size: 12px;
+}
+
+#contents img.head_photo {
+  margin: 0 0 10px 0;
+}
+
+#contents img.photo {
+  float: left;
+  margin: 10px 20px 0 0;
+}
+
+#contents img.picture {
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+#contents p.photo {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+
+table#t01 {
+  border: solid 1px #999999;
+  border-collapse: collapse;
+}
+
+
+td#t01 {
+  border: solid 1px #999999;
+  border-collapse: collapse;
+}
+
+
+td#head {
+  padding: 6px;
+  border: solid 1px #999999;
+  border-collapse: collapse;
+}
+
+
+table.member_list tr {
+  padding-bottom: 10px;
+}
+
+table.member_list td {
+  padding-left: 20px;
+}
+
+table.member_list th {
+  padding-left: 20px;
+}
+
+/*---------- メニュー ----------*/
+
+#menu {
+  margin: 3px 0 15px 0;
+  padding: 0;
+  width: 230px;
+  letter-spacing: 1px;
+  text-align: left;
+  background-image: url(img/menu_back.gif);
+}
+
+
+#menu h2 {
+  margin: 0 0 2px 0;
+  padding: 6px 0 6px 12px;
+  line-height: 110%;
+  font-size: 12px;
+  color: #fffffc;
+  background-color: #000000
+}
+
+
+.menulist {
+  margin: 0 0 14px 0;
+  padding: 5px 2px 0px 8px;
+  width: 215px;
+  text-align: left;
+  background-image: url(img/menu_back.gif);
+}
+
+.menulist h2 {
+  margin: 0;
+  padding: 6px 0 6px 12px;
+  line-height: 110%;
+  font-size: 12px;
+  color: #fffffc;
+  background-color: #000000
+}
+
+.menulist a{
+  color: #004080;
+  display: block;
+  border-bottom: solid 1px #999999;
+  padding: 11px 0 8px 24px;
+  font-size: 12px;
+  text-decoration: none;
+  background-image: url(img/side_menu_bg.gif);
+  background-repeat: no-repeat;
+ }
+
+.menulist a:hover{
+  color: #005ebb;
+  text-decoration: underline;
+  background-image: url(img/side_menu_bg_hover.gif);
+  background-repeat: no-repeat;
+}
+
+
+.menu_free {
+  margin: 0 0 14px 0;
+  padding: 5px 2px 0px 8px;
+  width: 215px;
+  text-align: left;
+  letter-spacing: 1px;
+  background-image: url(img/menu_back.gif);
+}
+
+.menu_free h2 {
+  margin: 0;
+  padding: 6px 0 6px 12px;
+  line-height: 110%;
+  font-size: 12px;
+  color: #fffffc;
+  background-color: #000000
+  background-repeat: no-repeat;
+}
+
+.menu_free a{
+  color: #004080;
+  width: 203px;
+  padding: 6px 0 5px 0;
+  font-size: 12px;
+ }
+
+.menu_free a:hover{
+  color: #005ebb;
+}
+
+.menu_free p{
+  margin: 10px 4px 0 4px;
+  font-size: 12px;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+
+#menu p {
+  margin: 10px 4px 0 4px;
+  line-height: 180%;
+}
+
+
+/*---------- フッター ----------*/
+
+#footer {
+  clear: both;
+  width: 100%;
+  margin: 0;
+  padding: 18px 0 18px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  border-top: solid 4px;
+  border-top-color: #000000
+  background-color: #ffffff;
+}
+
+#footer a {
+  color: #333333;
+  font-size: 12px;
+ }
+
+#footer a:hover {
+  color: #333333;
+}
