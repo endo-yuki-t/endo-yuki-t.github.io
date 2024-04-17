@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="../../js/analytics.js"></script>
+<TITLE>Single Image Weathering via Exemplar Propagation</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<!--[<b>English</b> | <a href="popup_jp.html">Japanese</a>] -->
+<H2 align="center">Single Image Weathering via Exemplar Propagation</H2>
+<CENTER>
+<P><a href="http://iizuka.cs.tsukuba.ac.jp/">Satoshi Iizuka</a><sup>1</sup>, <a href="https://endo-yuki-t.github.io">Yuki Endo</a><sup>2</sup>, <a href="http://kanamori.cs.tsukuba.ac.jp/index.html">Yoshihiro Kanamori</a><sup>2</sup>, and <a href="https://mitani.cs.tsukuba.ac.jp/ja/">Jun Mitani</a><sup>2</sup></P>
+<P><sup>1</sup>Waseda University<br/>
+ <sup>2</sup>University of Tsukuba</P>
+<BR>
+<table border="0">
+<tr>
+  <td>
+  <a><img src="images/representative_image.png" height="380" border="0"></a>
+  </td>
+</tr>
+</table>
+</CENTER>
+<HR boader="1">
+<h3>Abstract:</h3>
+<p align="justify">This paper presents an efficient approach for generating weathering effects with detailed appearance variations in a single image. Previous approaches merely change chroma or reflectance of weathered objects, which is not sufficient for materials with detailed shading and texture variations, such as growing moss and peeling plaster. Our method propagates such detailed features via seamless patch-based synthesis driven by weathering degree distribution. Unlike previous methods, the weathering degrees are calculated efficiently using Radial Basis Functions even for materials with wide color variations. We use graph cut-based optimization to identify the most weathered region as a ``weathering exemplar'', from which we sample weathering patches. We demonstrate our method enables us to generate various types of detailed weathering effects interactively. </p>
+<br>
+
+<!--
+<p>
+<div style="position: relative;	left: 50%; margin-left: -280px;"> 
+<div id="container">Loading the player ...</div></div>
+<script type="text/javascript" src="../../jwplayer/jwplayer.js"></script>
+<script type="text/javascript">
+	jwplayer("container").setup({ 
+		flashplayer: "../../jwplayer/player.swf", 
+		file: "data/weathering.mp4", 
+		height: 674, 
+		width: 900
+	});
+</script>
+</p>
+-->
+<p>
+<center>
+ <video controls width="900" height="674">
+ <source src="data/weathering.mp4">
+ </video>
+ </center>
+</p>
+<br>
+
+<HR boader="1">
+<h3>Publications:</h3>
+<ol>
+  <li>Satoshi Iizuka, Yuki Endo, Yoshihiro Kanamori, and Jun Mitani, "Single Image Weathering via Exemplar Propagation", Computer Graphics Forum (Proc. of Eurographics 2016), 35, 2, 501-509, 2016. [<a href="data/weathering.pdf">Pdf</a> (0.8MB)]&nbsp;[<a href="bib/weathering.bib">BibTex</a>]
+</li>
+<!--  [<a href="eg08_metaballs.pdf">PDF</a> (2.8MB)] [<a href="kanamori_eg08.ppt">PPT</a> (9.4MB, without movies)] [<a href="eg08_metaballs.wmv">Movie</a> (17.8MB)] [<a href="BibTex.txt">BibTex</a>]
+-->
+  
+  <!--<li>Satoshi Iizuka, Yuki Endo, Jun Mitani, Yoshihiro Kanamori, Yukio Fukui: "A Design System for Pop-Up Cards using a Physical Simulation" (in Japanese) Visual Computing 2011, June, 2011 (to appear).
+  <li>Satoshi Iizuka and Yuki Endo, "A Interactive Design System for Pop-Up Cards using a Mass-Spring model", (in Japanese) CS Technical Reports Special Issue on "Program for Develpment of ICT Solution Architects", pp. 61-68, 2011. 
+  -->  
+</ol>
+<HR boader="1">
+This work was supported by JST CREST. Yoshihiro Kanamori is funded by JSPS Postdoctoral Fellowships for Research Abroad.
+<h3>&nbsp;</h3>
+
+<!--
+<p>Last modified: 14 July, 2008</p>
+[<a href="/index.html">back</a>]
+-->
+
+</BODY>
+</HTML>
+
